@@ -7,13 +7,13 @@ import Header from './components/Header/Header'
 
 function App() {
 
-  const [bookmarks, setBookmarks]=useState([]);
+  const [bookmars, setBookmarks]=useState([]);
 
   const handleAddToBookmark =blog =>{
-    const newBookmark=[...bookmarks,blog];
+    const newBookmark=[...bookmars,blog];
     setBookmarks(newBookmark);
   }
-  
+  //console.log('bookmars is '+typeof({bookmars}));
   return (
     <>
       <Header></Header>
@@ -21,7 +21,7 @@ function App() {
       <div className='md:flex max-w-6xl mx-auto'>
 
       <Blogs handleAddToBookmark={handleAddToBookmark}></Blogs>
-      <Bookmars bookmarks={bookmarks}></Bookmars>
+      <Bookmars bookmars={bookmars}></Bookmars>
 
       </div>
     </>

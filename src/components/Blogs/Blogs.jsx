@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
 
 import PropTypes from 'prop-types';
