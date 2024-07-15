@@ -8,11 +8,21 @@ import Header from './components/Header/Header'
 function App() {
 
   const [bookmars, setBookmarks]=useState([]);
+  const [readingTime, setReadingTime]=useState(0);
 
   const handleAddToBookmark =blog =>{
-    const newBookmark=[...bookmars,blog];
-    setBookmarks(newBookmark);
+    if (!bookmars.includes(Blogs)) {
+      const newBookmark=[...bookmars,blog];
+      setBookmarks(newBookmark);
+    }
+    
   }
+
+  const handleMarkAsRead=time=>{
+    const newReadingTime=readingTime+time;
+    setReadingTime(newReadingTime);
+  }
+  console.log(readingTime);
   //console.log('bookmars is '+typeof({bookmars}));
   return (
     <>
@@ -20,8 +30,8 @@ function App() {
 
       <div className='md:flex max-w-6xl mx-auto'>
 
-      <Blogs handleAddToBookmark={handleAddToBookmark}></Blogs>
-      <Bookmars bookmars={bookmars}></Bookmars>
+      <Blogs handleAddToBookmark={handleAddToBookmark} handleMarkAsRead={handleMarkAsRead}></Blogs>
+      <Bookmars bookmars={bookmars} readingTime={readingTime}></Bookmars>
 
       </div>
     </>
