@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "cover": "https://i.ibb.co/0qTGPfy/greg-rakozy-o-Mp-Az-DN-9-I-unsplash.jpg",
+      "title": "The Quantum Enigma",
+      "author": "Dr. Evelyn Carter",
+      "img": "https://i.ibb.co/71cTCNc/humayun.jpg",
+      "posted_date": "2023-11-15",
+      "reading_time": 120,
+      "hashtags": ["#sciencefiction", "#quantumphysics", "#timetravel"]
+    },
+    {
+      "id": 2,
+      "cover": "https://i.ibb.co/tYJYpDy/patrick-tomasso-Oaqk7qq-Nh-c-unsplash.jpg",
+      "title": "Whispers of the Old Gods",
+      "author": "Silas Thorne",
+      "img": "https://i.ibb.co/BLNxwfd/pexels-doquyen-1520760.jpg",
+      "posted_date": "2024-03-07",
+      "reading_time": 180,
+      "hashtags": ["#fantasy", "#mythology", "#epicfantasy"]
+    },
+    {
+      "id": 3,
+      "cover": "https://i.ibb.co/JmNgPhH/austin-chan-ukz-Hlkoz1-IE-unsplash.jpg",
+      "title": "Metropolis Noir",
+      "author": "Alex Turner",
+      "img": "https://i.ibb.co/QbWkz60/jurica-koletic-7-YVZYZe-ITc8-unsplash.jpg",
+      "posted_date": "2024-05-22",
+      "reading_time": 90,
+      "hashtags": ["#noir", "#cyberpunk", "#dystopian"]
+    },
+    {
+      "id": 4,
+      "cover": "https://i.ibb.co/bWvm980/randalyn-hill-Z1-HXJQ2a-WIA-unsplash.jpg",
+      "title": "The Martian Gardener",
+      "author": "Anya Petrova",
+      "img": "https://i.ibb.co/X2cqhV9/pexels-nurlantortbayev-10311994.jpg",
+      "posted_date": "2023-09-28",
+      "reading_time": 150,
+      "hashtags": ["#sciencefiction", "#spaceopera", "#terraforming"]
+    },
+    {
+      "id": 5,
+      "cover": "https://i.ibb.co/sgRZskZ/pexels-thajeev-eev-1523794497-27137690.jpg",
+      "title": "Echoes of Eternity",
+      "author": "Kai Chen",
+      "img": "https://i.ibb.co/1q91R4H/nicolas-ladino-silva-9-QDp-Fd0j5o0-unsplash.jpg",
+      "posted_date": "2024-01-12",
+      "reading_time": 210,
+      "hashtags": ["#timetravel", "#paranormal", "#mystery"]
+    }
+  ]
+  
