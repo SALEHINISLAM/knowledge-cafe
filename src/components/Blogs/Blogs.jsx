@@ -11,10 +11,10 @@ const Blogs = ({handleAddToBookmark, handleMarkAsRead}) => {
         .then(data=>setBlogs(data))
     },[])
     return (
-        <div className='md:w-2/3'>
-            <h1 className="text-4xl">
+        <div className='md:w-2/3 mt-8'>
+            {/* <h1 className="text-4xl">
                 Blogs: {blogs.length}
-            </h1>
+            </h1> */}
             {
                 blogs.map(blog => <Blog 
                     blog={blog} 

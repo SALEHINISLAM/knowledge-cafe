@@ -11,18 +11,19 @@ function App() {
   const [readingTime, setReadingTime]=useState(0);
 
   const handleAddToBookmark =blog =>{
-    if (!bookmars.includes(Blogs)) {
+    if (!bookmars.includes(blog)) {
       const newBookmark=[...bookmars,blog];
       setBookmarks(newBookmark);
     }
     
   }
+  //console.log(bookmars.includes(Blogs));
 
   const handleMarkAsRead=time=>{
     const newReadingTime=readingTime+time;
     setReadingTime(newReadingTime);
   }
-  console.log(readingTime);
+  //console.log(readingTime);
   //console.log('bookmars is '+typeof({bookmars}));
   return (
     <>

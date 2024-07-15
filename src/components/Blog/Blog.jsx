@@ -6,7 +6,7 @@ const Blog = ({blog , handleAddToBookmark, handleMarkAsRead}) => {
     const {title,cover,author,img,reading_time,posted_date,hashtags}=blog;
     return (
         <div className='text-[#111111] mb-16'>
-            <img src={cover} alt={`Cover picture title ${title}`} className='w-full mb-8' />
+            <img src={cover} alt={`Cover picture title ${title}`} className='w-full mb-8 rounded-xl' />
             <div className=" flex justify-between items-center">
                 <div className="flex">
                     <img src={img} alt="" className='w-14 h-14 rounded-full'/>
@@ -23,12 +23,12 @@ const Blog = ({blog , handleAddToBookmark, handleMarkAsRead}) => {
                     ><BsBookmarks></BsBookmarks></button>
                 </div>
             </div>
-            <h2 className="text-4xl font-bold mb-4">
+            <h2 className="text-4xl font-bold mb-4 mt-5">
                 {title}
             </h2>
-            <p>
+            <p className="mb-3">
                 {
-                    hashtags.map((hash, index) =><span key={index}>{hash}</span>)
+                    hashtags.map((hash, index) =><span key={index}>{hash}  </span>)
                 }
             </p>
             <button
