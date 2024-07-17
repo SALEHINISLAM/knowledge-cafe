@@ -5,8 +5,13 @@ import PropTypes from 'prop-types';
 const Blogs = ({handleAddToBookmark, handleMarkAsRead}) => {
     const [blogs, setBlogs]=useState([]);
     useEffect(()=>{
-        fetch('/public/blogs.json')
-        .then(res=>res.json())
+        fetch('/blogs.json')
+        .then(res=>{
+            if (!res.ok) {
+                throw new Error(`HTTP error! status: ${res.status}`)
+            }
+            return res.json();
+        })
         .then(data=>setBlogs(data))
         .catch(error=>console.log(error))
     },[])
