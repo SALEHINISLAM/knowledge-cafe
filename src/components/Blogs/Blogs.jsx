@@ -8,7 +8,7 @@ const Blogs = ({handleAddToBookmark, handleMarkAsRead}) => {
         fetch('/public/blogs.json')
         .then(res=>res.json())
         .then(data=>setBlogs(data))
-        .catch(error=>alert('something went wrong',error))
+        .catch(error=>console.log(error))
     },[])
     return (
         <div className='md:w-2/3 mt-8'>
